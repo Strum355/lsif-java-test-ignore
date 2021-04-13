@@ -17,5 +17,12 @@ public class App {
                 return "";
             }
         }
+
+        public class Burger extends Test {
+            @Override
+            public String getGreeting() {
+                return super.getGreeting();
+            }
+        }
     }
 }
