@@ -1,28 +1,18 @@
 package test;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public interface Banana {
+        String getGreeting();
     }
 
-    public class Test extends App {
+    public interface Test {
+        String getGreeting();
+    }
+
+    public class Burger implements Test, Banana {
         @Override
         public String getGreeting() {
             return "";
-        }
-
-        public class Banana extends Test {
-            @Override
-            public String getGreeting() {
-                return "";
-            }
-        }
-
-        public class Burger extends Test {
-            @Override
-            public String getGreeting() {
-                return super.getGreeting();
-            }
         }
     }
 }

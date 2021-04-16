@@ -5,3 +5,6 @@
 build
 dump.lsif
 *.svg
+.idea
+bin
+.settings
