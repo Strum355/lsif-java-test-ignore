@@ -1,33 +1,23 @@
 package test;
 
 public class App {
-	public interface Banana {
-		String getGreeting();
-	}
+    public static void main(String[] args) {
+        Burger b = new Burger();
+        b.getGreeting();
+    }
 
-	public interface Test {
-		String getGreeting();
-	}
+    public interface Banana {
+        String getGreeting();
+    }
 
-	public class Burger implements Test, Banana {
-		@Override
-		public String getGreeting() {
-			return new CharSequence() {
-				@Override
-				public int length() {
-					return 0;
-				}
+    public interface Test {
+        String getGreeting();
+    }
 
-				@Override
-				public char charAt(int index) {
-					return 0;
-				}
-
-				@Override
-				public CharSequence subSequence(int start, int end) {
-					return null;
-				}
-			}.toString();
-		}
-	}
+    public static class Burger implements Test, Banana {
+        @Override
+        public String getGreeting() {
+            return "";
+        }
+    }
 }
