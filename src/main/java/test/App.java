@@ -2,7 +2,7 @@ package test;
 
 public class App {
     public static void main(String[] args) {
-        Burger b = new Burger();
+        Banana b = new Burger();
         b.getGreeting();
     }
 
