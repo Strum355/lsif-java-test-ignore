@@ -1,23 +1,21 @@
 package test;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main() {
         Banana b = new Burger();
         b.getGreeting();
     }
 
     public interface Banana {
-        String getGreeting();
+        void getGreeting();
     }
 
     public interface Test {
-        String getGreeting();
+        void getGreeting();
     }
 
     public static class Burger implements Test, Banana {
         @Override
-        public String getGreeting() {
-            return "";
-        }
+        public void getGreeting() {}
     }
 }
