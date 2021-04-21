@@ -1,5 +1,9 @@
 package test;
 
+/**
+ * <code>Sample text</code>
+ * <tt>Some other text?</tt>
+ */
 public class App {
     public static void main() {
         Banana b = new Burger();
