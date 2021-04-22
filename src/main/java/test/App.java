@@ -1,7 +1,7 @@
 package test;
 
 /**
- * <code>Sample text</code>
+ * <code class="language-java">public class App {}</code>
  * <tt>Some other text?</tt>
  */
 public class App {
