@@ -1,5 +1,7 @@
 package test;
 
+import com.google.common.cache.CacheBuilder;
+
 /**
  * <code class="language-java">public class App {}</code>
  * <tt>Some other text?</tt>
@@ -20,6 +22,8 @@ public class App {
 
     public static class Burger implements Test, Banana {
         @Override
-        public void getGreeting() {}
+        public void getGreeting() {
+            CacheBuilder.newBuilder().concurrencyLevel(5).build();
+        }
     }
 }
